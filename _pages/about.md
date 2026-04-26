@@ -7,11 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I don't just write code — I tear things down to the metal and rebuild them from scratch. Redis too abstract? I wrote my own key-value store in C++ with zero external dependencies. Want to understand how a computer boots? I built an x86 kernel that talks directly to hardware memory.
-
-I'm a final-year **AI & Machine Learning** undergrad at **Ramrao Adik Institute of Technology, Mumbai**, and I've spent the last few years obsessing over what happens beneath the layers most developers never touch — from poll()-based event loops and AVL-backed sorted sets to bare-metal VGA rendering and Multiboot-compliant bootloaders.
-
-When I'm not building systems software for fun, I work on **AI/ML engineering** — I interned at **RediMinds, Inc.** (Michigan, US), where I built predictive marketing systems that moved real metrics: 35% higher engagement, 30% better retention, and a pipeline of 50+ A/B-tested AI features.
+I'm a final-year **AI & Machine Learning** undergrad at **Ramrao Adik Institute of Technology, Mumbai**
 
 ---
 

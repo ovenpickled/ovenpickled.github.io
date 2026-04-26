@@ -1,12 +1,12 @@
 ---
-title: "TCP Chat Server — Real-Time Messaging in Go"
+title: "TCP Chat Server: Real-Time Messaging in Go"
 excerpt: "A concurrent, multi-room TCP chat server built in Golang with channel-driven command processing, per-client goroutines, and O(1) room lookups.<br/><br/><strong>Tech:</strong> Go, TCP Sockets, Goroutines, Channels"
 collection: portfolio
 ---
 
 ## Overview
 
-A real-time, multi-room TCP chat server built in **Golang** — designed around Go's concurrency primitives to handle multiple simultaneous clients and chat rooms without race conditions.
+A real-time, multi-room TCP chat server built in **Golang**, designed around Go's concurrency primitives to handle multiple simultaneous clients and chat rooms without race conditions.
 
 ## Key Technical Details
 
@@ -27,4 +27,4 @@ Each client runs in its own goroutine, sending parsed commands through a central
 
 ## Links
 
-🔗 [GitHub Repository](#) *(placeholder — update with actual link)*
+🔗 [GitHub Repository](https://github.com/ovenpickled/TCP-Chat-using-Golang)

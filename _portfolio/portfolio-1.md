@@ -1,5 +1,5 @@
 ---
-title: "Flux DB — Redis-Inspired Key-Value Store"
+title: "Flux DB: Redis-Inspired Key-Value Store"
 excerpt: "A high-performance key-value store built in C++17 from scratch with zero external dependencies. Features non-blocking I/O, incremental rehashing, and AVL-backed sorted sets.<br/><br/><strong>Tech:</strong> C++17, pthreads, poll(), AOF Persistence"
 collection: portfolio
 ---
@@ -27,4 +27,4 @@ Even with fsync-based AOF persistence enabled, the vast majority of requests com
 
 ## Links
 
-🔗 [GitHub Repository](#) *(placeholder — update with actual link)*
+🔗 [GitHub Repository](https://github.com/ovenpickled/flux-db)

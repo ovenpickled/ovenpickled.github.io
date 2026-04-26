@@ -6,7 +6,7 @@ collection: portfolio
 
 ## Overview
 
-A bootable x86 kernel written from scratch in **C and Assembly** — no operating system, no libraries, just raw hardware. Boots via GRUB using the Multiboot specification and renders text by writing directly to VGA video memory.
+A bootable x86 kernel written from scratch in **C and Assembly**, no operating system, no libraries, just raw hardware. Boots via GRUB using the Multiboot specification and renders text by writing directly to VGA video memory.
 
 ## Key Technical Details
 
@@ -17,8 +17,8 @@ A bootable x86 kernel written from scratch in **C and Assembly** — no operatin
 
 ## What I Learned
 
-This project was about understanding what happens between pressing the power button and seeing text on screen — the boot process, memory layout, segmentation, and how software communicates with hardware when there's nothing else running.
+This project was about understanding what happens between pressing the power button and seeing text on screen: the boot process, memory layout, segmentation, and how software communicates with hardware when there's nothing else running.
 
 ## Links
 
-🔗 [GitHub Repository](#) *(placeholder — update with actual link)*
+🔗 [GitHub Repository](https://github.com/ovenpickled/v0id-kernel)

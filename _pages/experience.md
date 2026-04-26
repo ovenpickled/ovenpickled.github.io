@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ## AI Engineering Intern
-**RediMinds, Inc.** — Southfield, Michigan, United States  
+**RediMinds, Inc.** - Southfield, Michigan, United States  
 *June 2024 – September 2024*
 
 - Built an AI-driven marketing system that applied predictive models to customer behavior, lifting engagement by **35%** and improving satisfaction by **40%** through automated segmentation and campaign targeting
@@ -14,5 +14,3 @@ author_profile: true
 - Ran **50+ A/B tests** on AI-generated campaign content and evaluated competitor offerings, uncovering **15 viable AI features** that improved click-through by 20%, conversion rates by 15%, and market share by 25%
 
 ---
-
-*More experience coming soon — check back for updates!*
