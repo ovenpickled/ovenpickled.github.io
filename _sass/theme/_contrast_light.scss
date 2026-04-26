@@ -1,67 +1,67 @@
 /* ==========================================================================
-   CONTRAST THEME - LIGHT VERSION
+   CONTRAST THEME - LIGHT VERSION (Aryan's Portfolio - Modern Developer)
    ========================================================================== */
 /* Color codes used for the theme */
-$primary-color              : #b60000;
-$dark-primary-color         : mix(#000, $primary-color, 40%);
-$darker-primary-color       : mix(#000, $primary-color, 60%);
+$primary-color              : #6c63ff;
+$dark-primary-color         : mix(#000, $primary-color, 20%);
+$darker-primary-color       : mix(#000, $primary-color, 40%);
 $light-primary-color        : mix(#fff, $primary-color, 50%);
 $lighter-primary-color      : mix(#fff, $primary-color, 90%);
-$background                 : #ffffff;
-$background-light           : #fafafa;
-$background-lighter        : #ffffff;
-$text                      : #000000;
-$text-muted                : #404040;
-$link                      : #0000ff;
-$link-dark                 : #0000cc;
-$link-light                : #3333ff;
-$footer                    : #ffffff;
-$border                    : #c0c0c0;
-$border-dark               : #808080;
-$selection-bg              : #b3d4fc;
-$selection-text            : #000000;
+$background                 : #0a0a0f;
+$background-light           : #12121a;
+$background-lighter         : #1a1a2e;
+$text                       : #e4e4e7;
+$text-muted                 : #a1a1aa;
+$link                       : #818cf8;
+$link-dark                  : #6366f1;
+$link-light                 : #a5b4fc;
+$footer                     : #06060a;
+$border                     : #27272a;
+$border-dark                : #3f3f46;
+$selection-bg               : #6c63ff40;
+$selection-text             : #ffffff;
 
 /* Color codes used for the site */
-$danger-color               : #ff0000;
-$info-color                 : #0000ff;
-$notice-color               : #000000;
-$success-color              : #008000;
-$warning-color              : #ff8800;
+$danger-color               : #f87171;
+$info-color                 : #818cf8;
+$notice-color               : #e4e4e7;
+$success-color              : #4ade80;
+$warning-color              : #fbbf24;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
+$border-radius              : 8px;
+$box-shadow                 : 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+$global-transition          : all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 $masthead-height            : 70px;
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Light theme for the site */
+/* Light theme actually serves as our base dark theme (default state) */
 :root {
   --global-base-color                 : #{$primary-color};
   --global-bg-color                   : #{$background};
   --global-footer-bg-color            : #{$footer};
   --global-border-color               : #{$border};
   --global-dark-border-color          : #{$border-dark};
-  --global-code-background-color      : #{$background-light};
-  --global-code-text-color            : #{$text};
+  --global-code-background-color      : #{$background-lighter};
+  --global-code-text-color            : #c4b5fd;
   --global-fig-caption-color          : #{$text-muted};
   --global-link-color                 : #{$link};
-  --global-link-color-hover           : #{$link-dark};
-  --global-link-color-visited         : #{$primary-color};
+  --global-link-color-hover           : #{$link-light};
+  --global-link-color-visited         : #{$link-dark};
   --global-masthead-link-color        : #{$text};
   --global-masthead-link-color-hover  : #{$primary-color};
   --global-text-color                 : #{$text};
   --global-text-color-light           : #{$text-muted};
-  --global-thead-color                : #{$border};
+  --global-thead-color                : #{$background-lighter};
   --global-toc-bg-color               : #{$background-light};
   --global-selection-bg-color         : #{$selection-bg};
   --global-selection-text-color       : #{$selection-text};
 }
 
-/* Text selection styling for light theme */
+/* Text selection styling */
 ::selection {
   background-color: var(--global-selection-bg-color);
   color: var(--global-selection-text-color);
@@ -72,7 +72,7 @@ $sidebar-screen-min-width   : 1024px;
   color: var(--global-selection-text-color);
 }
 
-/* Override notice colors for high contrast */
+/* Notice overrides for dark background */
 .page__content {
   .notice,
   .notice--primary,
@@ -81,12 +81,12 @@ $sidebar-screen-min-width   : 1024px;
   .notice--success,
   .notice--danger {
     color: #{$text};
-    border-color: #{$text};
+    border-color: #{$border-dark};
   }
 }
 
 html:not([data-theme="dark"]) footer {
-  color: #000000;
+  color: #{$text-muted};
 }
 
 // Do not change the color of the social icons in the feed icons

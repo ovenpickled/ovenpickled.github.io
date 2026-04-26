@@ -1,33 +1,33 @@
 /* ==========================================================================
-   CONTRAST THEME - DARK VERSION
+   CONTRAST THEME - DARK VERSION (Aryan's Portfolio - Modern Developer)
    ========================================================================== */
 /* Color codes used for the theme */
-$primary-color              : #ff6c60;
-$background                 : #000000;
-$background-light           : #1a1a1a;
-$background-lighter         : #2a2a2a;
-$text                      : #ffffff;
-$text-muted                : #d9d9d9;
-$link                      : #96cbfe;
-$link-dark                 : #c6c5fe;
-$link-light                : #ff73fd;
-$footer                    : #000000;
-$border                    : #4d4d4d;
-$border-light              : #666666;
-$selection-bg              : #264f78;
+$primary-color              : #818cf8;
+$background                 : #050507;
+$background-light           : #0f0f17;
+$background-lighter         : #16162a;
+$text                      : #f4f4f5;
+$text-muted                : #a1a1aa;
+$link                      : #a5b4fc;
+$link-dark                 : #818cf8;
+$link-light                : #c7d2fe;
+$footer                    : #050507;
+$border                    : #27272a;
+$border-light              : #3f3f46;
+$selection-bg              : #6c63ff50;
 $selection-text            : #ffffff;
 
 /* Color codes used for the site */
-$danger-color               : #ff6c60;
-$info-color                 : #96cbfe;
-$notice-color               : #ffffff;
-$success-color              : #a8ff60;
-$warning-color              : #e9c062;
+$danger-color               : #f87171;
+$info-color                 : #818cf8;
+$notice-color               : #f4f4f5;
+$success-color              : #4ade80;
+$warning-color              : #fbbf24;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
+$border-radius              : 8px;
+$box-shadow                 : 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+$global-transition          : all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 $masthead-height            : 70px;
 $navicon-width              : 28px;
 $navicon-height             : 4px;
@@ -42,11 +42,11 @@ html[data-theme="dark"] {
   --global-border-color               : #{$border};
   --global-dark-border-color          : #{$border-light};
   --global-code-background-color      : #{$background-light};
-  --global-code-text-color            : #{$text-muted};
+  --global-code-text-color            : #c4b5fd;
   --global-fig-caption-color          : #{$text-muted};
   --global-link-color                 : #{$link};
-  --global-link-color-hover           : #{$link-dark};
-  --global-link-color-visited         : #{$link-light};
+  --global-link-color-hover           : #{$link-light};
+  --global-link-color-visited         : #{$link-dark};
   --global-masthead-link-color        : #{$text};
   --global-masthead-link-color-hover  : #{$primary-color};
   --global-text-color                 : #{$text};
@@ -68,7 +68,7 @@ html[data-theme="dark"] ::-moz-selection {
   color: var(--global-selection-text-color);
 }
 
-/* Override notice colors for high contrast in dark mode */
+/* Override notice colors for dark mode */
 html[data-theme="dark"] {
   .page__content {
     .notice,
@@ -77,43 +77,43 @@ html[data-theme="dark"] {
     .notice--warning,
     .notice--success,
     .notice {
-      background-color: mix($background, $notice-color, 85%);
+      background-color: mix($background, $notice-color, 90%);
       color: #{$text};
-      border-color: #{$text};
+      border-color: #{$border-light};
     }
 
     .notice--primary {
-      background-color: mix($background, $notice-color, 85%);
+      background-color: mix($background, $notice-color, 90%);
       color: #{$text};
-      border-color: #{$text};
+      border-color: #{$border-light};
     }
 
     .notice--info {
-      background-color: mix($background, $info-color, 85%);
+      background-color: mix($background, $info-color, 88%);
       color: #{$text};
-      border-color: #{$text};
+      border-color: #{$border-light};
     }
 
     .notice--warning {
-      background-color: mix($background, $warning-color, 85%);
+      background-color: mix($background, $warning-color, 88%);
       color: #{$text};
-      border-color: #{$text};
+      border-color: #{$border-light};
     }
 
     .notice--success {
-      background-color: mix($background, $success-color, 85%);
+      background-color: mix($background, $success-color, 88%);
       color: #{$text};
-      border-color: #{$text};
+      border-color: #{$border-light};
     }
 
     .notice--danger {
-      background-color: mix($background, $danger-color, 85%);      
+      background-color: mix($background, $danger-color, 88%);      
       color: #{$text};
-      border-color: #{$text};
+      border-color: #{$border-light};
     }
   }
 
   .page__footer {
-    color: #{$text};
+    color: #{$text-muted};
   }
 }

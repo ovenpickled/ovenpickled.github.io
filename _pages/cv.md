@@ -9,56 +9,35 @@ redirect_from:
 
 {% include base_path %}
 
+📄 [Download my resume (PDF)](/files/AryanGhateResume.pdf)
+
+---
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **B.Tech in Artificial Intelligence and Machine Learning**  
+  Ramrao Adik Institute of Technology, Mumbai — *Expected 2026*
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **AI Engineering Intern** — RediMinds, Inc., Southfield, Michigan, US  
+  *June 2024 – September 2024*
+  * Built AI-driven marketing systems with predictive models, lifting engagement by 35%
+  * Integrated NLP-based feedback analysis, raising customer retention by 30%
+  * Ran 50+ A/B tests on AI-generated campaign content, improving click-through by 20%
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Languages:** Python, Java, Go, HTML/CSS, JavaScript, SQL, C, C++, Flutter, R
+* **Tech Stack:** AWS, Docker, Flask, FastAPI, PyTorch, Hugging Face, LangChain, Git, GitHub
 
-Publications
+Projects
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* **Flux DB** — Redis-inspired key-value store in C++17 (110k–150k ops/sec, zero dependencies)
+* **x86 Bootable Kernel** — Bare-metal kernel in C/Assembly with VGA rendering via GRUB
+* **TCP Chat Server** — Concurrent multi-room chat server in Golang with channel-driven architecture
+
+Achievements
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* 🏆 **MumbaiHacks 2025** — Finalist out of 2,000+ teams
+* 🥇 **Neural Spark Ideathon** — Winner

@@ -1,0 +1,266 @@
+/* ==========================================================================
+   CUSTOM OVERRIDES - Modern Developer Portfolio (Aryan Ghate)
+   ========================================================================== */
+
+/* ---------- Global Enhancements ---------- */
+
+body {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
+}
+
+/* Smooth page transitions */
+.page__content,
+.archive__item,
+.author__avatar img,
+.masthead {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Masthead / Navigation ---------- */
+
+.masthead {
+  border-bottom: 1px solid var(--global-border-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(10, 10, 15, 0.85);
+}
+
+.greedy-nav a {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.greedy-nav a:hover {
+  color: var(--global-masthead-link-color-hover) !important;
+  opacity: 0.9;
+}
+
+.greedy-nav .site-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Author Sidebar ---------- */
+
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid var(--global-border-color);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.author__avatar img:hover {
+  transform: scale(1.05);
+  border-color: var(--global-base-color);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+}
+
+.author__name {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.author__bio {
+  font-style: italic;
+  opacity: 0.85;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.author__urls-wrapper {
+  .btn--inverse {
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    transition: all 0.3s ease;
+  }
+
+  .btn--inverse:hover {
+    background: var(--global-base-color);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+}
+
+.author__urls {
+  li a {
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  li a:hover {
+    color: var(--global-base-color) !important;
+    transform: translateX(3px);
+  }
+}
+
+/* ---------- Archive / Project Cards ---------- */
+
+.archive__item {
+  padding: 1.2em;
+  border-radius: 12px;
+  border: 1px solid var(--global-border-color);
+  background: rgba(18, 18, 26, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 1.5em;
+}
+
+.archive__item:hover {
+  border-color: var(--global-base-color);
+  background: rgba(18, 18, 26, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(108, 99, 255, 0.15), 0 0 0 1px rgba(108, 99, 255, 0.1);
+
+  .archive__item-title {
+    text-decoration: none !important;
+    color: var(--global-base-color);
+  }
+}
+
+.archive__item-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: color 0.2s ease;
+}
+
+.archive__item-excerpt {
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+}
+
+/* ---------- Page Content ---------- */
+
+.page__title {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.page__content {
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid var(--global-border-color);
+    margin-top: 2em;
+  }
+
+  h3 {
+    font-weight: 600;
+    color: var(--global-base-color);
+  }
+
+  a {
+    transition: color 0.2s ease;
+    text-decoration-color: rgba(108, 99, 255, 0.3);
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    text-decoration-color: var(--global-base-color);
+  }
+
+  /* Code blocks */
+  pre {
+    border-radius: 10px;
+    border: 1px solid var(--global-border-color);
+    font-size: 0.85em;
+  }
+
+  code {
+    border-radius: 4px;
+    font-size: 0.88em;
+    padding: 0.15em 0.4em;
+  }
+
+  /* Tables */
+  table {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th {
+    background: var(--global-thead-color);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* Horizontal rules */
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--global-border-color), transparent);
+    margin: 2em 0;
+  }
+
+  /* Lists */
+  ul li, ol li {
+    margin-bottom: 0.4em;
+    line-height: 1.65;
+  }
+
+  /* Strong text with accent */
+  strong {
+    color: var(--global-text-color);
+    font-weight: 600;
+  }
+}
+
+/* ---------- Footer ---------- */
+
+.page__footer {
+  border-top: 1px solid var(--global-border-color);
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+/* ---------- Scrollbar (Webkit) ---------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--global-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--global-border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--global-base-color);
+}
+
+/* ---------- Focus States (Accessibility) ---------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--global-base-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- Selection ---------- */
+
+::selection {
+  background: rgba(108, 99, 255, 0.3);
+  color: #fff;
+}
